@@ -1,9 +1,3 @@
-function filter_list(l) {
-  return l.filter(val => {
-    return typeof (val) !== 'string';
-  });
+function find_average(array) {
+  return array.reduce((acc, val) => { return (acc + val); }) / array.length;
 }
-
-console.log(filter_list([1, 2, 'a', 'b']));
-console.log(filter_list([1, 'a', 'b', 0, 15]));
-console.log(filter_list([1, 2, 'aasf', '1', '123', 123]));
